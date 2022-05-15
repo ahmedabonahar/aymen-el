@@ -212,6 +212,14 @@ the website, in dark theme
     min-height: 200px
 }
 
+
+@media (max-width: 767px) {
+    .square-holder {
+        padding: 0 !important;
+    }
+}
+
+
 .partner {
     display: flex;
 }
@@ -920,6 +928,15 @@ the website, in dark theme
     color: var(--text-color-light);
     margin: 5rem 0 1rem;
 }
+
+
+
+@media (max-width: 767px) {
+    .footer__copy {
+        padding: 0 35px;
+    }
+}
+
 
 
 /*=============== SCROLL UP ===============*/
