@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
-<body>
+<body id="body">
     <!--==================== HEADER ====================-->
     
     <header class="header" id="header">
@@ -23,16 +23,16 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">الرئيسية</a>
+                        <a href="#home" class="nav__link active-link" data-translate="home-link">الرئيسية</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">من نحن</a>
+                        <a href="#about" class="nav__link" data-translate="about-link">من نحن</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">خدامتنا</a>
+                        <a href="#services" class="nav__link" data-translate="services-link">خدامتنا</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#vision" class="nav__link">روؤتنا</a>
+                        <a href="#vision" class="nav__link" data-translate="vision-link">روؤتنا</a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">تواصل معنا</a>
@@ -44,9 +44,10 @@
                 </div>
             </div>
             <div class="nav__btns">
-                <a href="">
-                    <i class="ri-global-line"></i>
+                <a>
+                    <i class="ri-global-line" onclick="change_lang()"></i>
                 </a>
+                
                 <!-- Theme change button -->
                 <i class="ri-moon-line change-theme" id="theme-button"></i>
 
@@ -81,8 +82,7 @@
             <div class="about__container grid">
                 <div class="about__data">
                     <h2 class="section__title about__title">
-                        <div data-translate="greet"></div>
-<button onclick="change_lang()">Change Language</button>
+                        <div ></div>
                         من نحن
                     </h2>
                     <p class="about__description">
@@ -571,6 +571,8 @@
     <script src="./js/pace.js"></script>
     <!--=============== MAIN JS ===============-->
     <script src="./js/main.js"></script>
+    <!--=============== translate JS ===============-->
+    <script src="./js/translate.js"></script>
 </body>
 
 </html>
