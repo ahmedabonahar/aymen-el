@@ -142,3 +142,28 @@ sr.reveal(`.home__social`, { delay: 600 })
 sr.reveal(`.about__img, .contact__box`, { origin: 'left' })
 sr.reveal(`.about__data, .contact__form`, { origin: 'right' })
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, { interval: 100 })
+
+var dictionary = {
+    'greet': {
+        'ar': 'Ciao',
+        'en': 'Hello',
+    }
+};
+var langs = ['it', 'en', 'fr'];
+var current_lang_index = 0;
+var current_lang = langs[current_lang_index];
+
+window.change_lang = function() {
+current_lang_index = ++current_lang_index % 3;
+current_lang = langs[current_lang_index];
+translate();
+}
+
+function translate() {
+$("[data-translate]").each(function(){
+    var key = $(this).data('translate');
+    $(this).html(dictionary[key][current_lang] || "N/A");
+});
+}
+
+translate();
