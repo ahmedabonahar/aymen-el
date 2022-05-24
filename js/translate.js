@@ -45,7 +45,7 @@ var dictionary = {
         'en': 'We provide our clients with professional, comprehensive and innovative professional solutions that are tailored to the specific circumstances of each client and are applicable to achieve the business objectives and meet the challenges facing the public, private and non-profit sectors in an effective manner.'
     },
     'service-title': {
-        'ar': 'خدامتنا',
+        'ar': 'خدماتنا',
         'en': 'Our Services'
     },
     'service-title-1': {
@@ -137,7 +137,7 @@ var dictionary = {
         'en': 'Provide professional services with a high level of quality and excellence through a team that have professional qualification and deep understanding of customers.'
     },
     'goal-title': {
-        'ar': 'مهمتنا',
+        'ar': 'هدفنا',
         'en': 'OUR GOALS'
     },
     'goal-desc': {
@@ -237,7 +237,7 @@ var dictionary = {
         'en': 'Contact Us'
     },
     'btn-services': {
-        'ar': 'خدامتنا',
+        'ar': 'خدماتنا',
         'en': 'Our Services'
     },
     'btn-glad': {
@@ -259,22 +259,28 @@ var current_lang_index = 0;
 var current_lang = langs[current_lang_index];
 
 window.change_lang = function() {
-current_lang_index = ++current_lang_index % 3;
+current_lang_index = ++current_lang_index % 2;
 current_lang = langs[current_lang_index];
 
+console.log(current_lang);
+    if (current_lang == undefined) {
+        current_lang = 'ar'
+    }
 var currentDir = document.getElementById("body").style.direction;
-   if (currentDir == '') {
-       document.getElementById("body").style.direction = "ltr";
-       document.getElementById("body").style.textAlign = "left";
-       currentDir = 'rtl'
-       translate();
+    if (current_lang === 'en') {
+        document.getElementById("body").style.direction = "ltr";
+        document.getElementById("body").style.textAlign = "left";
+        translate();
+        currentDir = 'ltr';
     } else {
+        current_lang = 'ar'
+        currentDir = 'rtl'
         document.getElementById("body").style.direction = "rtl";
         document.getElementById("body").style.textAlign = "right";
         translate();
-        current_lang_index = ++current_lang_index % 3;
+        current_lang_index = ++current_lang_index % 2;
         current_lang = langs[current_lang_index];
-   }
+    }
 translate();
 }
 
@@ -287,10 +293,3 @@ function translate() {
 
 translate();
 
-
-function changeDirLTR() {
-}
-
-function changeDirRTL() {
-    document.getElementById("body").style.direction = "rtl";
-}
