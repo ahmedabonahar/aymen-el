@@ -533,10 +533,10 @@
                             </div>
                         </div>
                     </div>
-                    <form name="myForm" action="javascript:sendMail();" class="contact__form">
+                    <form name="myForm" action="javascript:SendEmail();" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <input type="text" name="fullName" placeholder=" " class="contact__input">
+                                <input type="text" name="fullName" placeholder="" id="nameForm" class="contact__input">
                                 <label for="" class="contact__label" data-translate="form-name">الإسم</label>
                             </div>
 
@@ -623,8 +623,6 @@
     <script src="./js/main.js"></script>
     <!--=============== translate JS ===============-->
     <script src="./js/translate.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
 </body>
 
 </html>
