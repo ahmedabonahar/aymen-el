@@ -142,3 +142,47 @@ sr.reveal(`.home__social`, { delay: 600 })
 sr.reveal(`.about__img, .contact__box`, { origin: 'left' })
 sr.reveal(`.about__data, .contact__form`, { origin: 'right' })
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, { interval: 100 })
+
+
+
+function sendMail() {
+    let fullName = document.forms["myForm"]["fullName"].value;
+    if (fullName == "") {
+      alert("Name must be filled out");
+      return false;
+    } else {
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "ahmedabonahar",
+            Password : "gika_141986",
+            To : 'a.abonahar@gmail.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+}
+
+function validateForm() {
+    let fullName = document.forms["myForm"]["fullName"].value;
+    if (fullName == "") {
+      alert("Name must be filled out");
+      return false;
+    } else {
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "a.abonahar",
+            Password : "gika_141986",
+            To : 'a.abonahar@gmail.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+
+  
+  }

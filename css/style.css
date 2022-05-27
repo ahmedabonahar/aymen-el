@@ -798,14 +798,14 @@ the website, in dark theme
     z-index: 1;
 }
 
-.contact__label {
+/* .contact__label {
     position: absolute;
     top: .75rem;
     width: 100%;
     font-size: var(--small-font-size);
     color: var(--text-color-light);
     transition: .3s;
-}
+} */
 
 .contact__area {
     height: 7rem;
@@ -818,21 +818,21 @@ the website, in dark theme
 
 /*Input focus move up label*/
 
-.contact__input:focus+.contact__label {
+/* .contact__input:focus+.contact__label {
     top: -.75rem;
     left: 0;
     font-size: var(--smaller-font-size);
     z-index: 10;
-}
+} */
 
 
 /*Input focus sticky top label*/
 
-.contact__input:not(:placeholder-shown).contact__input:not(:focus)+.contact__label {
+/* .contact__input:not(:placeholder-shown).contact__input:not(:focus)+.contact__label {
     top: -.75rem;
     font-size: var(--smaller-font-size);
     z-index: 10;
-}
+} */
 
 
 /*=============== FOOTER ===============*/
