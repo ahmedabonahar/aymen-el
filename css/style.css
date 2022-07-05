@@ -150,6 +150,23 @@ img {
 
 
 /*=============== THEME ===============*/
+.img {
+    background: url(../img/aymen-logo.png);
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.dark-theme .img {
+    width: 75px !important;
+    height: 75px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background: url(../img/aymen-logo-2.png);
+}
 
 
 /*========== Variables Dark theme ==========*/

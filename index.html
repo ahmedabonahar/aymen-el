@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>مكتب إيمن الحديثي</title>
+    <title>مكتب أيمن الحديثي محاسبون قانونيون ومستشارون</title>
     <meta name="Description"
         content="مكتب إيمن الحديثي للمحاسبات والإستشارات القانونيةوخدمات المراجعة والتدقيق وخدمات الزكاء والضرائب والإستشارات المالية والمراجاعات الداخلية والإستشارات القضائية وإدارة المخاطر ">
     <meta name="Keywords"
@@ -21,8 +21,9 @@
 
     <header class="header" id="header">
         <nav class="nav container">
+            <div class="img"></div>
             <a href="#" class="nav__logo">
-                <i><img width="75" src="./img/aymen-logo.png" alt="مكاتب محاسبة قانونية ومراجعة والتدقيق والاستشارات القانونية والاستشارات القاضئية ومكتب محاسبة معتمد"></i>
+                <!-- <i><img width="75" src="./img/aymen-logo.png" alt="مكاتب محاسبة قانونية ومراجعة والتدقيق والاستشارات القانونية والاستشارات القاضئية ومكتب محاسبة معتمد"></i> -->
             </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -33,7 +34,7 @@
                         <a href="#about" class="nav__link" data-translate="about-link">من نحن</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link" data-translate="services-link">خداماتنا</a>
+                        <a href="#services" class="nav__link" data-translate="services-link">خدماتنا</a>
                     </li>
                     <li class="nav__item">
                         <a href="#vision" class="nav__link" data-translate="vision-link">روؤتنا</a>
@@ -513,12 +514,12 @@
                         <br>
                         <div class="contact__data">
                             <div class="contact__information">
-                                <h3 class="contact__subtitle" data-translate="contact-info-3">اتصل بنا للحصول على الدعم
+                                <h3 class="contact__subtitle" data-translate="contact-info-3">تواصل معنا للحصول على الدعم
                                     الفوري
                                 </h3>
                                 <span class="contact__description">
                                     <i class="ri-phone-line contact__icon"></i>
-                                    447 101 508 966+ <br>
+                                    477 101 508 966+ <br>
                                     262 261 112 966+
                                 </span>
                             </div>
@@ -532,27 +533,30 @@
                             </div>
                         </div>
                     </div>
-                    <form name="myForm" action="javascript:SendEmail();" class="contact__form">
+                   <form name="myForm" action="https://formsubmit.co/info@hedaithycpa.com" method="POST" class="contact__form">
                         <div class="contact__inputs">
-                            <div class="contact__content">
-                                <input type="text" name="fullName" placeholder="" id="nameForm" class="contact__input">
-                                <label for="" class="contact__label" data-translate="form-name">الإسم</label>
-                            </div>
+                             <div class="contact__content">
+                                <input type="text" name="fullName"  placeholder="الإسم"  id="nameForm" class="contact__input">
+                            </div> 
 
                             <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label" data-translate="form-mail">البريد
-                                    الإلكتروني</label>
+                                <input type="number" name="Mobile" placeholder="رقم الجوال"  class="contact__input">
+                            </div> 
+
+
+                            <div class="contact__content">
+                                <input type="email" name="email"  placeholder="البريد الإلكترونى"  class="contact__input">
                             </div>
 
                             <div class="contact__content contact__area">
-                                <textarea name="message" placeholder=" " class="contact__input"></textarea>
-                                <label for="" class="contact__label" data-translate="form-msg">رسالتك</label>
+                                <textarea name="message" data-translate="form-msg" placeholder="رسالتك" class="contact__input" rows="6" cols="70"></textarea>
                             </div>
                         </div>
                         <button class="button button--flex" type="submit" data-translate="btn-send">
                             أرسل الآن <i class="ri-arrow-left-up-line button__icon"></i>
                         </button>
+
+                        
                     </form>
                 </div>
             </section>
@@ -564,7 +568,8 @@
         <div class="footer__container container grid">
             <div class="footer__content">
                 <a href="#" class="footer__logo">
-                    <i><img width="100" src="./img/aymen-logo.png" alt="مكاتب محاسبة قانونية ومراجعة والتدقيق والاستشارات القانونية والاستشارات القاضئية ومكتب محاسبة معتمد"></i>
+                    <div class="img"></div>
+                    <!-- <i><img width="100" src="./img/aymen-logo.png" alt="مكاتب محاسبة قانونية ومراجعة والتدقيق والاستشارات القانونية والاستشارات القاضئية ومكتب محاسبة معتمد"></i> -->
                 </a>
                 <h3 class="footer__title" data-translate="footer-info">
                     معنا تحصل على أكثر من محاسب قانوني
@@ -574,6 +579,8 @@
                 <h3 class="footer__title" data-translate="address">العنوان</h3>
                 <ul class="footer__data">
                     <li class="footer__information" data-translate="address-info-1">٣٥١٢ طريق </li>
+                    <hr>
+                    <li class="footer__information" data-translate="address-info-2">٣٥١٢ طريق </li>
                     <!-- <li class="footer__information" data-translate="address-info-2">الياسمين </li> -->
                     <li class="footer__information" data-translate="riyad"></li>
                 </ul>
@@ -582,7 +589,7 @@
                 <h3 class="footer__title" data-translate="btn-contact">تواصل معنا</h3>
                 <ul class="footer__data">
                     <li class="footer__information">
-                        447 101 508 966+ <br>
+                        477 101 508 966+ <br>
                         262 261 112 966+
                     </li>
                     <div class="footer__social">

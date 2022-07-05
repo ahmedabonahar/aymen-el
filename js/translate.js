@@ -9,7 +9,7 @@ var dictionary = {
         'en': 'About Us',
     },
     'services-link': {
-        'ar': 'خدامتنا',
+        'ar': 'خدماتنا',
         'en': 'Our Sevices',
     },
     'vision-link': {
@@ -213,7 +213,7 @@ var dictionary = {
         'en': 'Contact us, we are at your service at any time'
     },
     'contact-info-3': {
-        'ar': 'اتصل بنا للحصول على الدعم الفوري',
+        'ar': 'تواصل معنا للحصول على الدعم الفوري',
         'en': 'Contact us for immediate support'
     },
     'contact-mail': {
@@ -259,6 +259,10 @@ var dictionary = {
     'address-info-1': {
         'ar': 'طريق 3512 \n <br> \n الياسمين \n <br> \n الرياض ١٣٣٢٥',
         'en': 'ST, 3512 \n <br> \n Al Yasmin \n <br> \n Al Riyadh 13325'
+    },
+    'address-info-2': {
+        'ar': 'فرع أبهـا : عمارة الكهرباء - طريق الخميس أبها - مقابل الراشد مول',
+        'en': ''
     }
 };
 
